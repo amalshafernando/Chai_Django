@@ -1,0 +1,50 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Delivery System</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+</head>
+<body>
+    <header>
+        <h1>Food Express</h1>
+    </header>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="/about/">About</a>
+        <a href="#">Menu</a>
+        <a href="/contact">Contact</a>
+    </div>
+
+    <div class="container">
+        <div class="hero">
+            <h2>Delicious Food Delivered To You</h2>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>Fast Delivery</h3>
+                <p>Get your food delivered in less than 30 minutes.</p>
+            </div>
+            <div class="feature">
+                <h3>Fresh Ingredients</h3>
+                <p>Only the freshest ingredients are used in our meals.</p>
+            </div>
+            <div class="feature">
+                <h3>Wide Variety</h3>
+                <p>Choose from a wide range of cuisines and dishes.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Food Express. All rights reserved.</p>
+    </footer>
+</body>
+</html>

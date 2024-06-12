@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Food Express</h1>
+       <!---- 
+       button id="theme-toggle"
+       Toggle Dark Mode
+       button --> 
+    </header>
+
+    <div class="navbar">
+        <a href="/">Home</a> <!-- Update the link for Home page -->
+        <a href="/about/">About</a>
+        <a href="#">Menu</a>
+        <a href="/contact">Contact</a>
+    </div>
+
+    <div class="container about-content">
+        <h2>About Us</h2>
+        <p>Food Express has been a leading provider of bakery items for the past 10 years. We are dedicated to delivering high-quality and delicious food to our customers.</p>
+        <p>Our extensive menu includes a variety of bakery items such as buns, pizzas, biscuits, rice, and desserts. We take pride in using the freshest ingredients to ensure the best taste and quality in every bite.</p>
+        <p>With our commitment to excellence and customer satisfaction, Food Express has become a trusted name in the food industry. Whether it's a quick snack or a special treat, we've got something for everyone.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Food Express. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        const body = document.body;
+        const header = document.querySelector('header');
+        const navbar = document.querySelector('.navbar');
+        const container = document.querySelector('.container');
+        const footer = document.querySelector('footer');
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            header.classList.toggle('dark-mode');
+            navbar.classList.toggle('dark-mode');
+            container.classList.toggle('dark-mode');
+            footer.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
