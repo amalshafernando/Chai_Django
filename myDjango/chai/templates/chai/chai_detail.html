@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        
+{% block title %}
+chai detail page
+{% endblock %}
+
+
+    </title>
+</head>
+<body>
+    
+
+
+{% block content  %}
+<h1>chai details page</h1>
+
+<h1>{{ chai.name }}</h1>
+<p>{{ chai.description }}</p>
+<img src="{{ chai.image.url }}" alt="{{ chai.name }}">
+
+{% endblock  %}
+    
+</body>
+</html>
